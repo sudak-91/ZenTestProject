@@ -1,0 +1,19 @@
+﻿FUNCTION_BLOCK "fbTest"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_OUTPUT 
+      Z : Int;
+   END_VAR
+
+   VAR 
+      x : Int;
+      y : Int;
+   END_VAR
+
+
+BEGIN
+	#x := 5;
+	#y := 6;
+	#Z := #x + #y;
+END_FUNCTION_BLOCK
+
